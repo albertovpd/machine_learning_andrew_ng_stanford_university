@@ -30,6 +30,17 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
+prediction = sigmoid(X*all_theta'); 
+
+[~, p] = max(prediction, [], 2);
+
+% the max of each row is with max(prediction, [],2
+%[~, p] . the syntax doesn't actually prevent the function from producing the output ... 
+% it just causes MATLAB to ignore the output and automatically clear it instead of
+%  assigning it to a workspace variable. So using the syntax makes your code cleaner
+%  looking but the function will still use the same resources (time & memory) to run.
+
+
 
 
 
