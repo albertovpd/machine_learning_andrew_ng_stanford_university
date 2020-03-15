@@ -100,11 +100,6 @@ $δJ(θ)/δθ_j= (1/m) \sum_{i=1}^{m}β^ix^i+(λ/m)θ_j  for  j >=1$
 
 # Matlab stuff
 
-- [dummy,idx]=min(dists);
-
-For this example, the code wants to work with the index of the minimum value, not the value itself, so the minimum value that is returned is discarded and only the index is retained.
-http://www.mathworks.com/help/matlab/matlab_prog/ignore-function-outputs.html?searchHighlight=tilde
-
 - Comparing vectors
 
 Logical arrays in Octave/MATLAB are arrays
@@ -112,3 +107,19 @@ which contain binary (0 or 1) elements. In Octave/MATLAB, evaluating
 the expression a == b for a vector a (of size m×1) and scalar b will return
 a vector of the same size as a with ones at positions where the elements
 of a are equal to b and zeroes where they are different.
+
+
+- [dummy,idx]=min(dists);
+
+For this example, the code wants to work with the index of the minimum value, not the value itself, so the minimum value that is returned is discarded and only the index is retained.
+http://www.mathworks.com/help/matlab/matlab_prog/ignore-function-outputs.html?searchHighlight=tilde
+
+- [~, p] = max(prediction, [], 2);
+
+the max of each row is with max(prediction, [],2
+
+[~, p]  the syntax doesn't actually prevent the function from producing the output ... it just causes MATLAB to ignore the output and automatically clear it instead of  assigning it to a workspace variable. So using the syntax makes your code cleaner looking but the function will still use the same resources (time & memory) to run.
+
+
+
+
