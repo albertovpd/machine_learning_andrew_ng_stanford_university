@@ -41,10 +41,15 @@ function [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)
         %the vectorizing point. important stuff
         g = 1./(1 + exp(-1*z));
         end
+- Cost function and gradient. 
 
+$J(\theta)=\sum_{i=1}^{m}(-y^i log(h_θ(x^i))-(1-y^i)log(1-h_θ(x^i)))$
 
+$\delta J(θ)/δθ_j=1/m \sum_{i=1}^{m}(h_θ(x^i)-y^i)x_j ^i$ 
 
+        function [J, grad] = costFunction(theta, X, y)
+        m = length(y); % number of training examples
+        J = 0;
+        grad = zeros(size(theta));
 
-
-
-      
+        %need to work a little bit on this
