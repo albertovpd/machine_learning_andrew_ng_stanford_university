@@ -1,9 +1,8 @@
 # ML_course_Andrew_Ng
 
-### All my work about the Machine Learning course of Andrew NG.
+- Machine Learning Course of Sandford University, by Andrew NG
 
- Besides the course itself and assessments, here you can also find:
+https://www.coursera.org/learn/machine-learning/home/welcome
 
-- [Personal hand-written notes of the course](personal_notes_theory.md)
 
-- [Personal matlab notes (I was a little rusty in Matlab)](personal_notes_matlab)
+- Here I also save my personal hand-written notes. There's nothing new to share but I like writing what I'm studying.
