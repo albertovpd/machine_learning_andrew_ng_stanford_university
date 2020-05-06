@@ -4,5 +4,3 @@
 
 https://www.coursera.org/learn/machine-learning/home/welcome
 
-
-- Here I also save my personal hand-written notes. There's nothing new to share but I like writing what I'm studying.
